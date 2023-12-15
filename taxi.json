@@ -1,0 +1,38 @@
+[{
+	"_id": {
+		"$oid": "60b28306a92b02c3109bd623"
+	},
+	"broj_telefona": "0658071572",
+    "taksi_dozvola": "12345",
+    "ime": "Lazar",
+    "prezime": "Savic",
+    "datum_rodjenja": "2003-02-19"
+},{
+	"_id": {
+		"$oid": "60b28306a92b02c3109bd624"
+	},
+	"broj_telefona": "0638416934",
+    "taksi_dozvola": "12346",
+    "ime": "Anja",
+    "prezime": "Milutinovic",
+    "datum_rodjenja": "2002-03-24"
+},{
+	"_id": {
+		"$oid": "60b28306a92b02c3109bd625"
+	},
+	"broj_telefona": "0644595661",
+    "taksi_dozvola": "12347",
+    "ime": "Lana",
+    "prezime": "Matic",
+    "datum_rodjenja": "2002-11-17"
+},{
+	"_id": {
+		"$oid": "60b28306a92b02c3109bd672"
+	},
+	"broj_telefona": "0652415682",
+    "taksi_dozvola": "12348",
+    "ime": "Stasa",
+    "prezime": "Djordjevic",
+    "datum_rodjenja": "2003-04-14"
+}
+]
