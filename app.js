@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 
 const loginRouter = require('./routes/login');
 const signupRouter = require('./routes/signup');
+const startRouter = require('./routes/start');
 
 const app = express();
 
@@ -13,6 +14,7 @@ app.set('views', 'views');
 app.use(express.urlencoded({extended: false}));
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use('/pocetna', startRouter);
 app.use('/signup',signupRouter);
 app.use('/', loginRouter);
 
