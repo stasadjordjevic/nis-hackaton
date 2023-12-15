@@ -1,4 +1,3 @@
-const welcomeModel = require('../model/login');
 
 module.exports.login = function(req, res, next){
     try{
