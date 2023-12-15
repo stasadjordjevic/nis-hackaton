@@ -2,8 +2,9 @@ html, body{
     margin: 0;
     height: 100%;
     width: 100%;
-    background-attachment: fixed;
-    background-image: url('asfalt.jpeg');
+    background-image: url('put.jpeg');
+    background-repeat: repeat-y;
+    background-size: cover;
 }
 
 #div1{
@@ -16,13 +17,18 @@ html, body{
 
 }
 
+
+#login{
+    color: rgb(255, 145, 0);
+
+}
+
 #naslov{
     text-align: center;
     margin:auto;
     width: 50%;
     padding: 10px;
     font-size: 80px;
-    color: white;
 }
 
 
