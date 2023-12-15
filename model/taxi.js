@@ -5,12 +5,10 @@ const taxiSchema = new mongoose.Schema({
     broj_telefona: {
         type: String,
         required: true,
-        unique: true
     },
     taksi_dozvola: {
         type: String,
-        required: true,
-        unique: true
+        required: true
     },
     ime: {
         type: String,
