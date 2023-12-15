@@ -1,7 +1,11 @@
-const path = require('path');
-const express = require('express');
 const mongoose = require('mongoose');
 
+mongoose.connect("mongodb://127.0.0.1:27017/dbTaxi", {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+});
+const path = require('path');
+const express = require('express');
 const loginRouter = require('./routes/login');
 const signupRouter = require('./routes/signup');
 const startRouter = require('./routes/start');
