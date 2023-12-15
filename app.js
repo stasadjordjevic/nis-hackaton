@@ -2,13 +2,8 @@ const path = require('path');
 const express = require('express');
 const mongoose = require('mongoose');
 
-mongoose.connect("mongodb://127.0.0.1:27017/Prodavnica", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-});
+const loginRouter = require('./routes/login');
 
-const artikalRoutes = require('./routes/artikal');
-const porudzbinaRoutes = require('./routes/porudzbina');
 
 const app = express();
 
@@ -18,8 +13,10 @@ app.set('views', 'views');
 app.use(express.urlencoded({extended: false}));
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/artikal', artikalRoutes);
-app.use('/porudzbina', porudzbinaRoutes);
+
+app.use('/', loginRouter);
+
+
 
 app.use(function (req, res, next) {
     const err = new Error('Pokušali ste da učitate stranicu koja ne postoji: ' + req.url);
