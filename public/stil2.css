@@ -1,11 +1,36 @@
-body {
-    background-image: linear-gradient(to bottom, rgb(210, 235, 0), rgb(162, 176, 14));
-    background-attachment: fixed;
+* {
+    font-family:'Courier New', Courier, monospace;
+    font-size:20px;
+    /* text-align: center; */
+}
+html, body{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('put.jpeg');
+    background-repeat: repeat-y;
+    background-size: cover;
+    font-weight: bolder;
+    font-size: xx-large;
 }
 
 h1 {
+    border:3px solid black;
+    margin:auto;
+    width: 20%;
+    padding: 10px;
+    /* border-radius: 25px; */
     text-align: center;
-    font-size: 40px;
+    font-size: 40px; 
+    margin-bottom: 20px;
+    margin-top: 20px;
+    /* width: 20%; */
+    /* left: auto; */
+    
+    background-color:  rgb(255, 145, 0);
+    /* border: 2px solid black;
+    width: 200px;
+    */
 }
 
 #gorivanca {
@@ -15,7 +40,10 @@ h1 {
     border: black 5px solid; 
     border-collapse: collapse;
 }
-
+table{
+    width: 600px;
+    background-color:  rgb(255, 145, 0);
+}
 th, td {
     border: black 5px solid;
     font-size: 30px;
@@ -30,3 +58,14 @@ th {
 td {
     border: black 3px solid;
 }
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+
+
+
+  

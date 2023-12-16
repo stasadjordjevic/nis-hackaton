@@ -2,12 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Naziv app</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
     <link rel="stylesheet"  type="text/css" href="/stil2.css">
-    <title>Naziv app</title>
+
+    
 </head>
 <body>
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" style="background-color: aliceblue;" id="mySidebar">
+        <button class="w3-bar-item w3-button w3-large"
+        onclick="w3_close()">Zatvori &times;</button>
+          <a href="../pocetna/share" class="w3-bar-item w3-button">Pozovi prijatelje</a>
+          <a href="../pocetna/cene" class="w3-bar-item w3-button">Cene goriva</a>
+          <a href="../pocetna/settings" class="w3-bar-item w3-button">Podesavanja</a>
+          <a href="../../" class="w3-bar-item w3-button">Odjavi se</a>
+    </div>
+
+
+    <div id="main">
+
+        
+    <div class="nasa">
     <h1>Cene goriva</h1>
     <table id="gorivanca">
         <thead>
@@ -18,13 +36,16 @@
 
         </thead>
         <tbody>
+            
             <% let n = fuels.length %>
-            <%for(let i = 0; i < n; i++){ %>
+            <%for(let i = 0; i < n; i++){
+                %>
                 <tr>
-
                     <td>
-                        <img src="<%=fuels[i].putanja_slika%>" alt="<%=fuels[i].naziv%>">
+                       <img src="<%=fuels[i].putanja_slika%>" id="<%=i%>" alt="<%=fuels[i].naziv%>">
+                        
                     </td>
+                
                     <td><%=fuels[i].cena%> din/L</td>
                 </tr>
             <%}%>
@@ -34,5 +55,25 @@
 
         </tr>
     </table>
+    </div>
+    </div>
+
+    <script>
+        function w3_open() {
+          document.getElementById("main").style.marginLeft = "10%";
+          document.getElementById("mySidebar").style.width = "10%";
+          document.getElementById("mySidebar").style.display = "block";
+          document.getElementById("openNav").style.visibility = "hidden";
+        
+        }
+        function w3_close() {
+          document.getElementById("main").style.marginLeft = "0%";
+          document.getElementById("mySidebar").style.width = "0%";
+          document.getElementById("mySidebar").style.display = "none";
+          document.getElementById("openNav").style.display = "inline-block";
+          document.getElementById("openNav").style.visibility = "visible";
+        }
+    </script>
 </body>
+
 </html>
