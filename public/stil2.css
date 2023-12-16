@@ -5,7 +5,7 @@
 html, body{
     margin: 0px auto;
     height: 100%;
-    width: 90%;
+    width: 100%;
     background-image: url('put.jpeg');
     /* background-repeat: repeat-y; */
     background-size: cover;
