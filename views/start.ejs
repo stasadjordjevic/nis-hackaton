@@ -59,6 +59,11 @@
         document.getElementById("openNav").style.display = "inline-block";
         document.getElementById("openNav").style.visibility = "visible";
       }
+      console.log(indikator);
+      if(indikator!= null && indikator > user.bodovi){
+        window.alert('Nemate dovoljno poena za izabrani popust :(');
+      }
+
       </script>
 </body>
 

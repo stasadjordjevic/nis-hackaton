@@ -19,12 +19,18 @@ module.exports.start = async function(req, res, next){
         if(data.dozvola!= null){
 
             user = await taxiModel.findTaxiDriver(data.dozvola);
-        }else if(user.dozvola != null){
+        }
+
+        if(data.indikator!= null && user.bodovi >= data.indikator){
+            console.log(data.indikator)
+            await taxiModel.updatePoints(user.broj_telefona, user.taksi_dozvola, -data.indikator)
             user = await taxiModel.findTaxiDriver(data.dozvola);
+            
         }
         
+        
         let qr = genQRCode(user.broj_telefona, user.taksi_dozvola);
-        res.render('start.ejs', {user, qr});
+        res.render('start.ejs', {user, qr, indikator : data.indikator});
     }catch(err){
         next(err);
     }
@@ -49,15 +55,12 @@ module.exports.cene = async function(req, res, next){
 module.exports.artikli = async function(req, res, next){
     try{
         const data = req.body;
-        //console.log(data)
-        if(data.indikator!= null && user.bodovi >= data.indikator){
-            //console.log(data.indikator)
-            await taxiModel.updatePoints(user.broj_telefona, user.taksi_dozvola, -data.indikator)
-            user = await taxiModel.findTaxiDriver(data.dozvola);
-        }
+        
+        
        
         //console.log(user);
         const artikli = await artikalModel.findArticles();
+
         res.render('artikli.ejs', {artikli, user});
     }catch(err){
         next(err);

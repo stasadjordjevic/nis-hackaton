@@ -19,11 +19,11 @@
             <br>
             <p class="niza_cena"><%= artikli[i].niza_cena%></p>
             <p id="ime"><%= artikli[i].naziv%></p>
-
-            <form action="../pocetna" method="post">
-                <input type="text" name="indikator" value="<%=artikli[i].manje_bodova%>" hidden>
-                <input type="text"  name="dozvola" value="<%=user.taksi_dozvola%>" hidden> 
-
+            
+            <form action="../pocetna" method="POST">
+                <input type="text" id="indikator" name="indikator" value="<%=artikli[i].manje_bodova%>">
+                <input type="text" id="dozvola" name="dozvola" value="<%=user.taksi_dozvola%>" hidden> 
+                <br>
                 <input type="submit" name="dugme" value="Iskoristi popust">
             </form>
 
