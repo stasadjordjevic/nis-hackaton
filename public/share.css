@@ -18,29 +18,18 @@ html, body{
 }
 h1{
     text-align: center;
-    /* margin: auto; */
+    margin: auto;
     font-size: larger;
     border:3px solid black;
     background-color:  goldenrod;
     display: inline-block;
-    position: absolute;
-    width: 500px;
-    left: 36%;
+    position: relative;
+    width: 400px;
+    /* left: 30%; */
+    left: calc((50%) - 260px);
+    /* right:calc((50%)-260px); */
+    /* right: 35%; */
 }
-/* 
-h1 {
-    border:3px solid black;
-    margin:auto;
-    width: 20%;
-    padding: 10px;
-    position: absolute;
-    left: 500px;
-    text-align: center;
-    font-size: 40px; 
-    margin-bottom: 20px;
-    margin-top: 20px;
-    background-color:  goldenrod;
-} */
 div{
     margin:auto;
     width: 100%;
@@ -52,8 +41,11 @@ p{
     text-align: center;
     margin: auto;
     color: goldenrod;
-    font-size: xx-large;
+    background-color:  black;
+    /* font-size: xx-large; */
     font-weight: bolder;
+    position: relative;
+    top: 20%;
     
 
 } 
@@ -61,29 +53,30 @@ p{
     margin: auto;
     width: 80%;
     padding: 10px;
-    border: 10px solid black;
+    /* border: 10px solid black; */
+    text-align: center;
     
-    
+    /* z-index: 6; */
 }
 
 .buttonCustom{
     display: inline-block;
-    position: relative;
-    margin: auto;
-    left: 20%;
+    /* position: relative; */
+    margin:10px auto;
+    /* left: 20%; */
     width: 300px;
     padding: 7px;
     background-color: antiquewhite;
-    z-index: 6;
+    z-index: 10;
 }
 
 #taxi{
     
-    position: absolute;
+    position: relative;
     margin:auto;
     width: 400px;
     bottom: 7px;
-    left: 35%;
+    left: calc((50%) - 200px);
     border-radius: 50%;
     z-index: 5;
 }
