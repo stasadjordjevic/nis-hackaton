@@ -15,6 +15,7 @@ module.exports.start = async function(req, res, next){
             await taxiModel.insertTaxiDriver(data.telefon, data.dozvola, data.ime, data.prezime, data.datum_rodjenja);
         }
         let user = await taxiModel.findTaxiDriver(data.dozvola);
+        
         let qr = genQRCode(user.broj_telefona, user.taksi_dozvola);
         res.render('start.ejs', {user, qr});
     }catch(err){
@@ -46,5 +47,6 @@ module.exports.artikli = async function(req, res, next){
         next(err);
     }
 }
+
 
 

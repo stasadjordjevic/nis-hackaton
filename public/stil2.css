@@ -1,7 +1,6 @@
 * {
     font-family:'Courier New', Courier, monospace;
     font-size:20px;
-    /* text-align: center; */
 }
 html, body{
     margin: 0;
@@ -19,18 +18,13 @@ h1 {
     margin:auto;
     width: 20%;
     padding: 10px;
-    /* border-radius: 25px; */
+    position: absolute;
+    left: 200px;
     text-align: center;
     font-size: 40px; 
     margin-bottom: 20px;
     margin-top: 20px;
-    /* width: 20%; */
-    /* left: auto; */
-    
-    background-color:  rgb(255, 145, 0);
-    /* border: 2px solid black;
-    width: 200px;
-    */
+    background-color:  goldenrod;
 }
 
 #gorivanca {
@@ -42,7 +36,7 @@ h1 {
 }
 table{
     width: 600px;
-    background-color:  rgb(255, 145, 0);
+    background-color:  goldenrod;
 }
 th, td {
     border: black 5px solid;

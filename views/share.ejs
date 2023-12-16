@@ -5,28 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"  type="text/css" href="/share.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
     <title>Naziv app</title>
 </head>
 <body>
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" style="background-color: aliceblue;" id="mySidebar">
+        <button class="w3-bar-item w3-button w3-large"
+        onclick="w3_close()">Zatvori &times;</button>
+          <a href="../pocetna/" class="w3-bar-item w3-button">Početna strana</a>
+
+          <a href="../pocetna/share" class="w3-bar-item w3-button">Pozovi prijatelje</a>
+          <a href="../pocetna/cene" class="w3-bar-item w3-button">Cene goriva</a>
+          <a href="pocetna/popusti" class="w3-bar-item w3-button">Moji popusti</a>
+          <a href="../../" class="w3-bar-item w3-button">Odjavi se</a>
+
+    </div>
+
+    <div id="main">
+    <button id="openNav" class="w3-button w3-white w3-xxlarge"  onclick="w3_open()">&#9776;</button>
+
     <h1>Podeli sa prijateljima</h1> 
     <p> Podeli link sa prijateljima i osvoji 10 dodatnih poena </p>
 
     
 
     <div id="dugmici">
-        <button onclick="shareViaMessage()">Share via Message</button>
-        <button onclick="shareViaWhatsApp()">Share via WhatsApp</button> <br> <br>
-        <button onclick="shareViaViber()">Share via Viber</button> 
-        <button onclick="shareViaEmail()">Share via Email</button> <br> <br>
-        <button onclick="shareOnFacebook()">Share on Facebook</button>
-        <button onclick="shareOnTwitter()">Share on Twitter</button>
+        <button class="buttonCustom" onclick="shareViaMessage()">Podeli putem SMS poruke</button>
+        <button class="buttonCustom" onclick="shareViaWhatsApp()">Podeli putem WhatsApp-a</button> <br> <br>
+        <button class="buttonCustom" onclick="shareViaViber()">Podeli putem Viber-a</button> 
+        <button class="buttonCustom" onclick="shareViaEmail()">Podeli putem Email-a</button> <br> <br>
+        <button class="buttonCustom" onclick="shareOnFacebook()">Podeli putem Facebook-a</button>
+        <button class="buttonCustom" onclick="shareOnTwitter()">Podeli putem Twitter-a</button>
     </div>
 
 
-    <img src="/taxi1.png" alt="taxi" id="taxi">
+    <img src="/taxi2.png" alt="taxi" id="taxi">
 
    <script src="/scripts.js"></script>
-
+    </div>
+    <script>
+        function w3_open() {
+          document.getElementById("main").style.marginLeft = "10%";
+          document.getElementById("mySidebar").style.width = "10%";
+          document.getElementById("mySidebar").style.display = "block";
+          document.getElementById("openNav").style.visibility = "hidden";
+        
+        }
+        function w3_close() {
+          document.getElementById("main").style.marginLeft = "0%";
+          document.getElementById("mySidebar").style.width = "0%";
+          document.getElementById("mySidebar").style.display = "none";
+          document.getElementById("openNav").style.display = "inline-block";
+          document.getElementById("openNav").style.visibility = "visible";
+        }
+    </script>
     
 </body>
 </html>
