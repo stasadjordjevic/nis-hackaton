@@ -7,7 +7,7 @@
     <link rel="stylesheet"  type="text/css" href="/stil3.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-    <title>Naziv app</title>
+    <title>Artikli</title>
 </head>
 <body>
     <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" style="background-color: aliceblue;" id="mySidebar">
@@ -24,7 +24,7 @@
     <div id="main">
     <button id="openNav" class="w3-button w3-white w3-xxlarge" style="display:block; left:0"  onclick="w3_open()">&#9776;</button>
 
-    <h1>artikli</h1>
+    <h1>Sakupljaj poene i ostvari popust na sledeće artikle</h1>
 
     <div id="trojka">
     <% let n = artikli.length;%>
@@ -41,11 +41,14 @@
             <p class="niza_cena"><%= artikli[i].niza_cena%></p>
             <br>
             <form action="../pocetna" method="POST">
-                <input type="text" readonly id="indikator" name="indikator" value="<%=artikli[i].manje_bodova%>"hidden>
+                <input type="text" readonly  name="indikator" value="<%=artikli[i].manje_bodova%>"hidden>
                 <input type="text" readonly id="dozvola" name="dozvola" value="<%=user.taksi_dozvola%>" hidden> 
+                <input type="text" readonly id="bodovi" name="bodovi" value="<%=user.bodovi%>" hidden> 
                 <br>
                 <input type="submit" name="dugme" value="Iskoristi popust">
             </form>
+            <script src="/validacija_artikala.js"></script>
+
 
         </div>
     <% }%>
@@ -69,5 +72,6 @@
           document.getElementById("openNav").style.visibility = "visible";
         }
     </script>
+
 </body>
 </html>

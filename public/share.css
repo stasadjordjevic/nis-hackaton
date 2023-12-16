@@ -9,9 +9,26 @@ html, body{
     background-image: url('put.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
-    font-weight: bolder;
+    /* font-weight: bolder; */
 }
-h1{
+h1 {
+    border:3px solid black;
+    margin:auto;
+    width: 40%;
+    padding: 10px;
+    left: 30%;
+    right: 30%;
+    position: relative;
+    text-align: center;
+    font-size: 40px; 
+    margin-bottom: 20px;
+    margin-top: 20px;
+    /* background-color:  goldenrod; */
+    background-color: rgba(218,165,32,0.7);
+    border-radius: 25px;
+}
+
+/* h1{
     text-align: center;
     margin: auto;
     font-size: larger;
@@ -21,7 +38,7 @@ h1{
     position: relative;
     width: 400px;
     left: calc((50%) - 260px);
-}
+} */
 div{
     margin:auto;
     width: 100%;
