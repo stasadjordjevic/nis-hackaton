@@ -6,7 +6,8 @@
     "taksi_dozvola": "12345",
     "ime": "Lazar",
     "prezime": "Savic",
-    "datum_rodjenja": "2003-02-19"
+    "datum_rodjenja": "2003-02-19",
+    "bodovi": 20
 },{
 	"_id": {
 		"$oid": "60b28306a92b02c3109bd624"
@@ -15,7 +16,8 @@
     "taksi_dozvola": "12346",
     "ime": "Anja",
     "prezime": "Milutinovic",
-    "datum_rodjenja": "2002-03-24"
+    "datum_rodjenja": "2002-03-24",
+    "bodovi": 20
 },{
 	"_id": {
 		"$oid": "60b28306a92b02c3109bd625"
@@ -24,7 +26,8 @@
     "taksi_dozvola": "12347",
     "ime": "Lana",
     "prezime": "Matic",
-    "datum_rodjenja": "2002-11-17"
+    "datum_rodjenja": "2002-11-17",
+    "bodovi": 20
 },{
 	"_id": {
 		"$oid": "60b28306a92b02c3109bd672"
@@ -33,6 +36,7 @@
     "taksi_dozvola": "12348",
     "ime": "Stasa",
     "prezime": "Djordjevic",
-    "datum_rodjenja": "2003-04-14"
+    "datum_rodjenja": "2003-04-14",
+    "bodovi": 20
 }
 ]

@@ -21,6 +21,10 @@ const taxiSchema = new mongoose.Schema({
     datum_rodjenja: {
         type: Date,
         required: true
+    },
+    bodovi: {
+        type: Number,
+        default: 20
     }
 }, {collection: "korisnici"});
 
@@ -46,7 +50,16 @@ async function insertTaxiDriver(phoneNumber, taxiPermit, name, surname, dob) {
     newUser.prezime = surname;
     newUser.datum_rodjenja = dob;
     const n = await newUser.save();
-    console.log('Ubaceno: ', n);
+    
 }
 
- module.exports = {findTaxiDriver, insertTaxiDriver};
+async function updatePoints(phoneNumber, taxiPermit, addPoints) {
+    const user = await findTaxiDriver(taxiPermit);
+    await taxiModel.updateOne({ taksi_dozvola: taxiPermit}, {
+        $set: {
+            bodovi: user.bodovi + addPoints
+        }
+    }).exec();
+}
+
+ module.exports = {findTaxiDriver, insertTaxiDriver, updatePoints};

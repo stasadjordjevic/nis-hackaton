@@ -15,7 +15,7 @@ module.exports.start = async function(req, res, next){
         }
         let user = await taxiModel.findTaxiDriver(data.dozvola);
         let qr = genQRCode(user.broj_telefona, user.taksi_dozvola);
-        console.log(qr);
+        
         res.render('start.ejs', {user, qr});
     }catch(err){
         next(err);
@@ -41,6 +41,7 @@ module.exports.cene = async function(req, res, next){
 
 module.exports.settings = async function(req, res, next){
     try{
+        
         res.render('settings.ejs');
     }catch(err){
         next(err);
