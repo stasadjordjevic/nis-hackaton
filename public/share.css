@@ -20,17 +20,8 @@ h1{
     text-align: center;
     margin: auto;
 }
-/* h1{
-    text-align: center; */
-    /* margin: auto; */
-    /* font-size: larger;
-    border:3px solid black;
-    background-color:  goldenrod;
-    display: inline-block;
-    position: absolute;
-    width: 500px;
-    left: 36%;
-} */
+
+
 /* 
 h1 {
     border:3px solid black;
@@ -68,6 +59,7 @@ p{
 }
 
 /* .buttonCustom{
+.buttonCustom{
     display: inline-block;
     position: relative;
     left: 10%;
@@ -75,6 +67,7 @@ p{
     padding: 7px;
     background-color: antiquewhite;
 } */
+
 
 #taxi{
     

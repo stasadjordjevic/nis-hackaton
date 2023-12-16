@@ -3,7 +3,7 @@
 		"$oid": "60b28306a92b02c3109bd623"
 	},
 	"naziv": "Kafa",
-    "putanja_slika": "/kafa.jpg",
+    "putanja_slika": "/kafe.png",
     "originalna_cena": 200,
     "niza_cena": 134.99,
     "manje_bodova": 20
@@ -11,8 +11,8 @@
 	"_id": {
 		"$oid": "60b28306a92b02c3109bd624"
 	},
-	"naziv": "Cigare",
-    "putanja_slika": "/cigare.png",
+	"naziv": "Kroasan",
+    "putanja_slika": "/kroasan.png",
     "originalna_cena": 450,
     "niza_cena": 339.99,
     "manje_bodova": 40
@@ -20,8 +20,8 @@
 	"_id": {
 		"$oid": "60b28306a92b02c3109bd625"
 	},
-	"naziv": "Zvake",
-    "putanja_slika": "/zvake.png",
+	"naziv": "rawbars",
+    "putanja_slika": "/rawbars.png",
     "originalna_cena": 180,
     "niza_cena": 79.99,
     "manje_bodova": 30

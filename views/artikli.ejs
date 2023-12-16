@@ -12,8 +12,12 @@
 
     <% let n = artikli.length; %>
     <%for(let i = 0; i < n; i++) {%>
-        <div>
+        <div class="omotac" onclick="obrisi(<%=i%>)">
             <img src="<%=artikli[i].putanja_slika%>" alt="<%=artikli[i].naziv%>">
+            <br>
+            <span class="cena"><%= artikli[i].originalna_cena%></span>
+            <span class="niza_cena"><%= artikli[i].niza_cena%></span>
+
         </div>
     <% }%>
 
