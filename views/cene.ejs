@@ -9,6 +9,30 @@
 </head>
 <body>
     <h1>cene goriva</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Vrsta goriva</th>
+                <th>Cena</th>
+            </tr>
 
+        </thead>
+        <tbody>
+            <% let n = fuels.length %>
+            <%for(let i = 0; i < n; i++){ %>
+                <tr>
+
+                    <td>
+                        <img src="<%=fuels[i].putanja_slika%>" alt="<%=fuels[i].naziv%>">
+                    </td>
+                    <td><%=fuels[i].cena%> din/L</td>
+                </tr>
+            <%}%>
+
+        </tbody>
+        <tr>
+
+        </tr>
+    </table>
 </body>
 </html>

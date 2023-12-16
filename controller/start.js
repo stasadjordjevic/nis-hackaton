@@ -1,4 +1,5 @@
 const taxiModel = require('../model/taxi');
+const fuelModel = require('../model/fuel');
 
 function genQRCode(phoneNumber, taxiPermit)
 {
@@ -30,7 +31,9 @@ module.exports.share = async function(req, res, next){
 }
 module.exports.cene = async function(req, res, next){
     try{
-        res.render('cene.ejs');
+        const fuels = await fuelModel.findFuels();
+        console.log(fuels)
+        res.render('cene.ejs', {fuels});
     }catch(err){
         next(err);
     }
