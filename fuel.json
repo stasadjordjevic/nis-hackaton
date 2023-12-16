@@ -1,0 +1,34 @@
+[{
+	"_id": {
+		"$oid": "60b28306a92b02c3109bd613"
+	},
+	"naziv": "GDrive D",
+    "cena": "201",
+    "opis": "G-Drive Dizel je premijum aditivirano dizel gorivo koje Vašem vozilu pruža novu snagu, a Vama bolji osećaj vožnje. Sinergija aktivnih komponenti aditiva i goriva Evro 5 standarda najvišeg kvaliteta, doprinosi obnavljanju i povećanju snage motora Vašeg automobila do 7,8%.",
+    "putanja_slika": "./gdrived.png"
+},{
+	"_id": {
+		"$oid": "60b28306a92b02c3109bd655"
+	},
+	"naziv": "GDrive 100",
+    "cena": "193",
+    "opis": "Novi premijum benzin 100 oktana G-Drive 100 sadrži aktivne komponente koje omogućavaju efikasniji rad motora, poboljšavaju njegove performanse i pozitivno se odražavaju na njegovu ispravnost i dugovečnost. Proizvedeno prema najvišim tehnološkim standardima, G-Drive 100 je gorivo nove snage koje će vašem motoru pružiti profesionalnu zaštitu, a vama sigurniju i uzbudljiviju vožnju. Specijalna formula ovog goriva produžava radni vek motora i sprečava nastanak kvarova. G-Drive 100 prodaje se ekskluzivno na Gazprom mreži benzinskih stanica.",
+    "putanja_slika": "./gdrive100.png"
+},{
+	"_id": {
+		"$oid": "60b28306a92b02c3109bd613"
+	},
+	"naziv": "Evro Dizel",
+    "cena": "195",
+    "opis": "Naš evrodizel vrhunskog kvaliteta omogućava maksimalne performanse vozila, pravilno paljenje i besprekoran rad motora čak i na izuzetno niskim temperaturama. Mirniji rad, veća snaga i manja potrošnja jesu prednosti korišćenja ovog goriva. Proizveden po najstrožim proizvođačkim specifikacijama, kvalitet evrodizela je potpuno u skladu sa evropskim standardom EN 590.",
+    "putanja_slika": "./evro-dizel.png"
+},{
+	"_id": {
+		"$oid": "60b28306a92b02c3109bd613"
+	},
+	"naziv": "BMB 95",
+    "cena": "173",
+    "opis": "Evro premijum BMB 95 je gorivo vrhunskog kvaliteta koje potpuno ispunjava najoštrije zahteve za Evro 5 emisione standarde za putnička vozila. Namenjen je vozilima novije generacije, njihovom očuvanju, kao i očuvanju životne sredine, a kvalitet evro premijuma BMB 95 je u skladu sa evropskim standardom kvaliteta benzina EN 228.",
+    "putanja_slika": "./bmb95.png"
+}
+]
