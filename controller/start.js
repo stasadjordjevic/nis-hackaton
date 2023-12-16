@@ -1,5 +1,6 @@
 const taxiModel = require('../model/taxi');
 const fuelModel = require('../model/fuel');
+const artikalModel = require('../model/artikal');
 
 function genQRCode(phoneNumber, taxiPermit)
 {
@@ -15,7 +16,6 @@ module.exports.start = async function(req, res, next){
         }
         let user = await taxiModel.findTaxiDriver(data.dozvola);
         let qr = genQRCode(user.broj_telefona, user.taksi_dozvola);
-        
         res.render('start.ejs', {user, qr});
     }catch(err){
         next(err);
@@ -32,17 +32,16 @@ module.exports.share = async function(req, res, next){
 module.exports.cene = async function(req, res, next){
     try{
         const fuels = await fuelModel.findFuels();
-        console.log(fuels)
         res.render('cene.ejs', {fuels});
     }catch(err){
         next(err);
     }
 }
 
-module.exports.settings = async function(req, res, next){
+module.exports.artikli = async function(req, res, next){
     try{
-        
-        res.render('settings.ejs');
+        const artikli = await artikalModel.findArticles();
+        res.render('artikli.ejs', {artikli});
     }catch(err){
         next(err);
     }
