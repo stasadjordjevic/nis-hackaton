@@ -45,3 +45,9 @@ body{
     left: 70px;
     bottom: 170px;
 }
+
+#bodovi{
+    position: absolute;
+    left: 70px;
+    bottom: 30px;
+}
