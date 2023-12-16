@@ -7,7 +7,7 @@ function shareOnFacebook() {
 
 function shareViaWhatsApp() {
     // Replace 'your-text' with the actual message content
-    const messageContent = 'Check out this link: http://localhost:3000/';
+    const messageContent = 'Instaliraj Taxi u Praksi i osvoji bonus poene dobrodošlice za kupovinu naših artikala po najpovoljnijim cenama. Link: http://localhost:3000/';
 
     // Construct the WhatsApp link
     const whatsappLink = `https://api.whatsapp.com/send?text=${encodeURIComponent(messageContent)}`;
@@ -23,7 +23,7 @@ function openShareWindow(shareLink) {
 
 function shareViaViber() {
     // Replace 'your-text' with the actual message content
-    const messageContent = 'Check out this link: http://localhost:3000/';
+    const messageContent = 'Instaliraj Taxi u Praksi i osvoji bonus poene dobrodošlice za kupovinu naših artikala po najpovoljnijim cenama. Link: http://localhost:3000/';
 
     // Construct the Viber link
     const viberLink = `viber://forward?text=${encodeURIComponent(messageContent)}`;
@@ -35,8 +35,8 @@ function shareViaViber() {
 
 function shareViaEmail() {
     // Replace 'your-subject' and 'your-body' with the actual subject and body of the email
-    const subject = 'TaxiDrive';
-    const body = 'Your email body content.\n\nLink to share: http://localhost:3000/';
+    const subject = 'Taxi u Praksi';
+    const body = 'Instaliraj Taxi u Praksi i osvoji bonus poene dobrodošlice za kupovinu naših artikala po najpovoljnijim cenama.\n\nLink: http://localhost:3000/';
 
     // Construct the mailto link
     const mailtoLink = `mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
@@ -47,7 +47,7 @@ function shareViaEmail() {
 
 function shareViaMessage() {
     // Replace 'your-message' with the actual message content
-    const messageContent = 'Check out this link: http://localhost:3000/';
+    const messageContent = 'Instaliraj Taxi u Praksi i osvoji bonus poene dobrodošlice za kupovinu naših artikala po najpovoljnijim cenama. Link: http://localhost:3000/';
 
     // Construct the sms link
     const smsLink = `sms:?&body=${encodeURIComponent(messageContent)}`;
@@ -58,7 +58,7 @@ function shareViaMessage() {
 
 function shareOnTwitter() {
     // Replace 'your-link-here' with the actual link you want to share
-    const linkToShare = 'http://localhost:3000/';
+    const linkToShare = 'Instaliraj Taxi u Praksi i osvoji bonus poene dobrodošlice za kupovinu naših artikala po najpovoljnijim cenama. Link: http://localhost:3000/';
     const twitterShareLink = `https://twitter.com/intent/tweet?url=${encodeURIComponent(linkToShare)}`;
     openShareWindow(twitterShareLink);
 }
