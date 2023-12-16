@@ -21,6 +21,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/pocetna', startRouter);
 app.use('/signup',signupRouter);
 app.use('/', loginRouter);
+//nista
 
 
 
