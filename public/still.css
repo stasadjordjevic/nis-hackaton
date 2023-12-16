@@ -14,6 +14,23 @@ html, body{
     font-weight: bolder;
     font-size: xx-large;
 }
+#br_taxi_dozvole{
+    background-color: goldenrod;
+    /* border-radius: 5%; */
+    display: block;
+    margin: 3px;
+    font-size: larger;
+    width: 100%;
+    padding: 4px;
+    text-align: center;
+
+}
+#dozvola{
+    width: 100%;
+    display: block;
+    height: 50px;
+    border: 5px solid black;
+}
 
 /* input[type="text"],input[type="date"]{
     display: block;
@@ -21,12 +38,12 @@ html, body{
     width: 100%;
     border: 5px solid black;
 } */
-.textBox{
+/* .textBox{
     display: block;
     height: 30px;
     width: 100%;
     border: 5px solid black;
-}
+} */
 input[type="submit"]{
     display: block;
     height: 50px;
@@ -34,17 +51,40 @@ input[type="submit"]{
     border-radius: 25px;
     border: 4px solid goldenrod;
 }
+#login{
+    display: block;
+}
 #div1{
-    border:3px solid white;
+    /* border:3px solid white; */
+    /* background-image: url('taxi_u_praksi_logo.jpeg');
+    background-size: cover; */
+    /* filter: blur(8px);
+    -webkit-filter: blur(8px); */
     margin:auto;
-    width: 50%;
+    width: 70%;
+    height: 30%;
     padding: 10px;
     border-radius: 25px;
     
 
 }
+#slika_logo{
+    margin:auto;
+    width: 50%;
+    height: 70%;
+    padding: 10px;
+    border-radius: 25px;
+}
+#slika_logo img{
+    width: 60%;
+    margin-left: 20%;
+}
+#nemate_nalog{
+    background-color: aliceblue;
+    text-align: center;
+}
 #login{
-    color: goldenrod;
+    /* color: goldenrod; */
 
 }
 label{

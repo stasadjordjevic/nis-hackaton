@@ -5,27 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"  type="text/css" href="/still.css">
-    <title>Naziv app</title>
+    <title>Taksi u praksi</title>
 </head>
 <body id="login">
     
-    <h1 id="naslov">Naziv app</h1>
+    <!-- <h1 id="naslov">Naziv app</h1> -->
 
     <div id="div1">
 
         <form method="post" action="/pocetna">
 
-            <label for="dozvola">Broj taxi dozvole:</label><br>
+            <label for="dozvola" id="br_taxi_dozvole">Broj taxi dozvole:</label><br>
             <input type="text" class="textBox" name="dozvola" id="dozvola" required> 
             <br>
-            <br>
             <input type="text" name="ind" value="login" hidden> 
-            <input type="submit" value="login" id="log">
+            <input type="submit" value="Prijavi se" id="log">
 
         </form>
 
-
-        <p>Nemate nalog? <a href="./signup">Registruj se </a></p>
+        <br><br>
+        <p id="nemate_nalog">Nemate nalog? <a href="./signup">Registruj se </a></p>
+    </div>
+    <div id="slika_logo">
+        <img src="taxi_u_praksi_logo.jpeg">
+    </div>
 
 </body>
 </html>
