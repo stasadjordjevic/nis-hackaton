@@ -15,6 +15,15 @@ module.exports.start = async function(req, res, next){
             await taxiModel.insertTaxiDriver(data.telefon, data.dozvola, data.ime, data.prezime, data.datum_rodjenja);
         }
         let user = await taxiModel.findTaxiDriver(data.dozvola);
+        const currentDate = new Date();
+        console.log(currentDate)
+        if(user.datum_rodjenja.getDate() == currentDate.getDate()){
+            if(user.datum_rodjenja.getMonth() == currentDate.getMonth()){
+                await taxiModel.updatePoints(user.phoneNumber, user.taxiPermit, 50);
+            }
+        }
+
+        user = await taxiModel.findTaxiDriver(data.dozvola);
         let qr = genQRCode(user.broj_telefona, user.taksi_dozvola);
         res.render('start.ejs', {user, qr});
     }catch(err){
