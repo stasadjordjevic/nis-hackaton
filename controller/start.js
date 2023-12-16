@@ -2,8 +2,6 @@ const taxiModel = require('../model/taxi');
 const fuelModel = require('../model/fuel');
 const artikalModel = require('../model/artikal');
 
-let user;
-
 function genQRCode(phoneNumber, taxiPermit)
 {
     return "7824 7236 " + phoneNumber.substr(phoneNumber.length - 3, 3) + taxiPermit.charAt(0) + " " + taxiPermit.substr(1);
@@ -28,9 +26,9 @@ module.exports.start = async function(req, res, next){
             
         }
         
-        
+       
         let qr = genQRCode(user.broj_telefona, user.taksi_dozvola);
-        res.render('start.ejs', {user, qr, indikator : data.indikator});
+        res.render('start.ejs', {user, qr});
     }catch(err){
         next(err);
     }
@@ -66,3 +64,6 @@ module.exports.artikli = async function(req, res, next){
         next(err);
     }
 }
+
+
+
