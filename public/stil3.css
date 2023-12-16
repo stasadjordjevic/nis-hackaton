@@ -100,3 +100,14 @@ input[type="submit"]{
     text-decoration: black;
     
 }
+#kao_submit{
+    background-color: red;
+    display: block;
+    bottom: 8px;
+    left: 10%;
+    width: 80%;
+    position: absolute;
+    font-size: smaller;
+    font-weight: bold;
+    text-decoration: black;
+}

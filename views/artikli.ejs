@@ -45,9 +45,17 @@
                 <input type="text" readonly id="dozvola" name="dozvola" value="<%=user.taksi_dozvola%>" hidden> 
                 <input type="text" readonly id="bodovi" name="bodovi" value="<%=user.bodovi%>" hidden> 
                 <br>
-                <input type="submit" name="dugme" value="Iskoristi popust">
+                <%if (artikli[i].manje_bodova<=user.bodovi){%>
+                    <input type="submit" name="dugme" value="Iskoristi popust">
+                <%}
+                else{%>
+                    <br>
+                    <p id="kao_submit">Nemaš dovoljno bodova za ovu akciju</p>
+
+                    <!-- <input type="label" id="kao_submit" value="Nemaš dovoljno bodova za ovu akciju">  -->
+                <%}%>
+                
             </form>
-            <script src="/validacija_artikala.js"></script>
 
 
         </div>
