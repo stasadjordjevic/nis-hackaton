@@ -11,6 +11,13 @@ html, body{
     /* font-weight: bolder;
     font-size: xx-large; */
 }
+#mapa{
+    padding-top: 30px;
+   text-align: center;
+   padding-bottom: 30px;
+
+}
+
 
 h1 {
     border:3px solid black;
