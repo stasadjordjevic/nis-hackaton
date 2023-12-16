@@ -1,7 +1,38 @@
-div {
+body {
+    position: relative;
+    background-image: url("kartica.jpg");
+}
+
+.omotac {
     display: inline-block;
+    position: relative;
     background-color: goldenrod;
     width: 30%;
     margin-right: 2%;
-    height: 300px;
+    height: 400px;
+    border-radius: 15%;
+}
+.cena{
+    position: absolute;
+    bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    left: 25%;
+}
+
+.niza_cena{
+    position: absolute;
+    bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    left: 25%;
+}
+img {
+    position: absolute;
+    width: 60%;
+    left: 25%;
+    top: 20px;
+/* 
+    top: 100px;
+    width: 100px; */
 }
