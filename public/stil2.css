@@ -7,10 +7,9 @@ html, body{
     height: 100%;
     width: 100%;
     background-image: url('put.jpeg');
-    /* background-repeat: repeat-y; */
     background-size: cover;
-    font-weight: bolder;
-    font-size: xx-large;
+    /* font-weight: bolder;
+    font-size: xx-large; */
 }
 
 h1 {

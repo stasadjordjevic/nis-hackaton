@@ -1,33 +1,46 @@
 * {
     font-family:'Courier New', Courier, monospace;
     font-size:20px;
+    text-align: center;
 }
 body {
     position: relative;
+    margin: 0;
+    height: 100%;
+    width: 100%;
     background-image: url("kartica.jpg");
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    /* font-weight: bolder; */
 }
-h1 {
-    border:3px solid black;
-    /* display: inline-block; */
-    margin:auto;
-    width: 40%;
-    padding: 10px;
-    /* position: relative; */
-    /* left: 200px; */
+h1{
     text-align: center;
-    font-size: 40px; 
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin: auto;
+    font-size: larger;
+    border:3px solid black;
     background-color:  goldenrod;
+    position: relative;
+    width: 400px;
+    left: calc((50%) - 200px);
 }
+/* div{
+    margin:auto;
+    width: 100%;
+    padding: 10px;
+} */
 .omotac {
     display: inline-block;
     position: relative;
     background-color: goldenrod;
     width: 30%;
     margin-right: 2%;
-    height: 400px;
+    height: 500px;
     border-radius: 15%;
+}
+#trojka{
+    width: 80%;
+    margin-left: 200px;
+    height: 500px;
 }
 .cena{
     position: absolute;
@@ -48,37 +61,41 @@ h1 {
 }
 img {
     position: absolute;
-    width: 60%;
-    left: 25%;
+    width: 70%;
+    left: 5%;
     top: 20px;
-/* 
-    top: 100px;
-    width: 100px; */
-}
-form{
-    position: absolute;
-    
-    left: 65%;
-    display: inline-block;
-    bottom: 45px;
-
 }
 input{
     background-color: gray;
     
 }
-#ime{
-    bottom: 45px;
-    left: 65%;
+.ime{
+    bottom: 150px;
+    left: 20%;
     position: absolute;
-
+    align-items: center;
+    text-align: center;
     font-size: xx-large;
     font-weight: bolder;
-    font-family: 'Courier New', Courier, monospace;
     text-decoration: black;
 
+}
+.br_bodova{
+    bottom: 130px;
+    left: 10%;
+    position: absolute;
+
+    text-decoration: black;
 }
 #indikator{
     background-color: goldenrod;
     border: 0;
+}
+input[type="submit"]{
+    bottom: 30px;
+    left: 10%;
+    position: absolute;
+
+    text-decoration: black;
+    
 }

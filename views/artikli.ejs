@@ -5,30 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"  type="text/css" href="/stil3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
     <title>Naziv app</title>
 </head>
 <body>
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" style="background-color: aliceblue;" id="mySidebar">
+        <button class="w3-bar-item w3-button w3-large"
+        onclick="w3_close()">Zatvori &times;</button>
+          <a href="../pocetna" class="w3-bar-item w3-button">Početna strana</a>
+
+          <a href="../pocetna/share" class="w3-bar-item w3-button">Pozovi prijatelje</a>
+          <a href="../pocetna/cene" class="w3-bar-item w3-button">Cene goriva</a>
+          <a href="../pocetna/popusti" class="w3-bar-item w3-button">Moji popusti</a>
+          <a href="../../" class="w3-bar-item w3-button">Odjavi se</a>
+
+    </div>
+    <div id="main">
+    <button id="openNav" class="w3-button w3-white w3-xxlarge" style="display:block; left:0"  onclick="w3_open()">&#9776;</button>
+
     <h1>artikli</h1>
 
+    <div id="trojka">
     <% let n = artikli.length;%>
     <%for(let i = 0; i < n; i++) {%>
         <div class="omotac" onclick="koristi()">
             <img src="<%=artikli[i].putanja_slika%>" alt="<%=artikli[i].naziv%>">
             <br>
-            <p class="cena" readonly><%= artikli[i].originalna_cena%></p>
+            <p class="ime"><%= artikli[i].naziv%></p>
+            <br>
+            <p class="br_bodova">Potreban broj bodova:<%=artikli[i].manje_bodova%></p>
+            <br>
+            <p class="cena"><%= artikli[i].originalna_cena%></p>
             <br>
             <p class="niza_cena"><%= artikli[i].niza_cena%></p>
-            <p id="ime"><%= artikli[i].naziv%></p>
-            
+            <br>
             <form action="../pocetna" method="POST">
-                <input type="text" id="indikator" name="indikator" value="<%=artikli[i].manje_bodova%>">
-                <input type="text" id="dozvola" name="dozvola" value="<%=user.taksi_dozvola%>" hidden> 
+                <input type="text" readonly id="indikator" name="indikator" value="<%=artikli[i].manje_bodova%>"hidden>
+                <input type="text" readonly id="dozvola" name="dozvola" value="<%=user.taksi_dozvola%>" hidden> 
                 <br>
                 <input type="submit" name="dugme" value="Iskoristi popust">
             </form>
 
         </div>
     <% }%>
-
+</div>
+</div>
+    <script>
+        function w3_open() {
+          document.getElementById("main").style.marginLeft = "10%";
+          document.getElementById("mySidebar").style.width = "10%";
+          document.getElementById("mySidebar").style.display = "block";
+          document.getElementById("openNav").style.visibility = "hidden";
+        
+        }
+        function w3_close() {
+            document.getElementById("main").style.marginLeft = "0%";
+          document.getElementById("mySidebar").style.width = "0%";
+          document.getElementById("mySidebar").style.display = "none";
+          document.getElementById("openNav").style.display = "block";
+          document.getElementById("openNav").style.left = "0px";
+          
+          document.getElementById("openNav").style.visibility = "visible";
+        }
+    </script>
 </body>
 </html>

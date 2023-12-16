@@ -7,14 +7,9 @@ html, body{
     height: 100%;
     width: 100%;
     background-image: url('put.jpeg');
-    /* background-attachment: fixed; */
     background-size: cover;
     background-repeat: no-repeat;
     font-weight: bolder;
-
-    background-size: cover;
-
-    /* color: goldenrod; */
 }
 h1{
     text-align: center;
@@ -25,16 +20,12 @@ h1{
     display: inline-block;
     position: relative;
     width: 400px;
-    /* left: 30%; */
     left: calc((50%) - 260px);
-    /* right:calc((50%)-260px); */
-    /* right: 35%; */
 }
 div{
     margin:auto;
     width: 100%;
     padding: 10px;
-
 }
  
 p{
