@@ -10,13 +10,19 @@
 <body>
     <h1>artikli</h1>
 
-    <% let n = artikli.length; %>
+    <% let n = artikli.length;%>
     <%for(let i = 0; i < n; i++) {%>
-        <div class="omotac">
+        <div class="omotac" onclick="koristi()">
             <img src="<%=artikli[i].putanja_slika%>" alt="<%=artikli[i].naziv%>">
             <br>
             <span class="cena"><%= artikli[i].originalna_cena%></span>
             <span class="niza_cena"><%= artikli[i].niza_cena%></span>
+            <form action="../pocetna" method="post">
+                <input type="text" name="indikator" value="<%=artikli[i].manje_bodova%>" hidden>
+                <input type="text"  name="dozvola" value="<%=user.taksi_dozvola%>" hidden> 
+
+                <input type="submit" name="dugme" value="Iskoristi popust">
+            </form>
 
         </div>
     <% }%>
