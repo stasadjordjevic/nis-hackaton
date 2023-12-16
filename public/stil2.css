@@ -15,18 +15,17 @@ html, body{
 
 h1 {
     border:3px solid black;
-    /* display: inline-block; */
-    /* display: inline; */
     margin:auto;
     width: 40%;
     padding: 10px;
     position: relative;
-    /* left: 200px; */
     text-align: center;
     font-size: 40px; 
     margin-bottom: 20px;
     margin-top: 20px;
-    background-color:  goldenrod;
+    /* background-color:  goldenrod; */
+    background-color: rgba(218,165,32,0.7);
+    border-radius: 25px;
 }
 
 #gorivanca {
@@ -38,7 +37,9 @@ h1 {
 }
 table{
     width: 800px;
-    background-color:  goldenrod;
+    /* background-color:  goldenrod; */
+
+    background-color: rgba(218,165,32,0.7);
     margin: auto;
     border: black 12px solid;
     /* position: relative;

@@ -32,18 +32,6 @@ html, body{
     border: 5px solid black;
 }
 
-/* input[type="text"],input[type="date"]{
-    display: block;
-    height: 30px;
-    width: 100%;
-    border: 5px solid black;
-} */
-/* .textBox{
-    display: block;
-    height: 30px;
-    width: 100%;
-    border: 5px solid black;
-} */
 input[type="submit"]{
     display: block;
     height: 50px;
@@ -55,11 +43,6 @@ input[type="submit"]{
     display: block;
 }
 #div1{
-    /* border:3px solid white; */
-    /* background-image: url('taxi_u_praksi_logo.jpeg');
-    background-size: cover; */
-    /* filter: blur(8px);
-    -webkit-filter: blur(8px); */
     margin:auto;
     width: 70%;
     height: 30%;
@@ -70,10 +53,11 @@ input[type="submit"]{
 }
 #slika_logo{
     margin:auto;
+    
     width: 50%;
     height: 70%;
     padding: 10px;
-    border-radius: 25px;
+    /* border-radius: 25px; */
 }
 #slika_logo img{
     width: 60%;
