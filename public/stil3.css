@@ -14,18 +14,20 @@ body {
 }
 .cena{
     position: absolute;
-    bottom: 20px;
+    bottom: 80px;
     font-size: 30px;
     font-weight: bold;
     left: 25%;
+    text-decoration-line: line-through;
 }
 
 .niza_cena{
     position: absolute;
     bottom: 20px;
-    font-size: 30px;
+    font-size: 45px;
     font-weight: bold;
-    left: 25%;
+    left: 20%;
+    color: red;
 }
 img {
     position: absolute;
@@ -35,4 +37,27 @@ img {
 /* 
     top: 100px;
     width: 100px; */
+}
+form{
+    position: absolute;
+    
+    left: 65%;
+    display: inline-block;
+    bottom: 45px;
+
+}
+input{
+    background-color: gray;
+    
+}
+#ime{
+    bottom: 45px;
+    left: 65%;
+    position: absolute;
+
+    font-size: xx-large;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: black;
+
 }
