@@ -1,7 +1,19 @@
-#kartica {
-    width: 45%;
-    height: 200px;
+*{
+    /* color: white; */
+}
+#kartica{
+    width: 55%;
+    height: 600px;
     margin: auto;
     top: 50px;
-    background-color: yellow;
+    background-image: url("kartica.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+/* style="position: relative; left: 39%;" */
+#qrcode{
+    position: absolute;
+    left: 100px;
+
 }
