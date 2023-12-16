@@ -2,3 +2,31 @@ body {
     background-image: linear-gradient(to bottom, rgb(210, 235, 0), rgb(162, 176, 14));
     background-attachment: fixed;
 }
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+#gorivanca {
+    font-size: 30px;
+    margin: auto;
+    width: 30%;
+    border: black 5px solid; 
+    border-collapse: collapse;
+}
+
+th, td {
+    border: black 5px solid;
+    font-size: 30px;
+    margin: auto;
+    text-align: center;
+    height: 100px;
+}
+th {
+    height: auto;
+}
+
+td {
+    border: black 3px solid;
+}
