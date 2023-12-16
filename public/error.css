@@ -1,0 +1,12 @@
+h1 {
+    text-align: center;
+    font-size: 80px;
+    color: darkred;
+    font-weight: bolder;
+}
+
+body {
+    background-color: goldenrod;
+    text-align: center;
+    font-size: 30px;
+}
