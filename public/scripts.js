@@ -47,7 +47,7 @@ function shareViaEmail() {
 
 function shareViaMessage() {
     // Replace 'your-message' with the actual message content
-    const messageContent = 'Check out this link: https://your-link-here.com';
+    const messageContent = 'Check out this link: http://localhost:3000/';
 
     // Construct the sms link
     const smsLink = `sms:?&body=${encodeURIComponent(messageContent)}`;
@@ -58,7 +58,7 @@ function shareViaMessage() {
 
 function shareOnTwitter() {
     // Replace 'your-link-here' with the actual link you want to share
-    const linkToShare = 'https://your-link-here.com';
+    const linkToShare = 'http://localhost:3000/';
     const twitterShareLink = `https://twitter.com/intent/tweet?url=${encodeURIComponent(linkToShare)}`;
     openShareWindow(twitterShareLink);
 }
