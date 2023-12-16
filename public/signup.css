@@ -1,0 +1,95 @@
+* {
+    font-family:'Courier New', Courier, monospace;
+    font-size:20px;
+}
+html, body{
+    
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('put.jpeg');
+    background-repeat: repeat-y;
+    background-size: cover;
+    font-weight: bolder;
+    /* font-size: xx-large; */
+}
+/* h1{
+    text-align: center;
+    margin:auto;
+    width: 50%;
+    padding: 10px;
+    font-size: 25px;
+    background-color: rgba(218,165,32,0.7);
+    border-radius: 25px;
+
+} */
+h1 {
+    border:3px solid black;
+    margin:auto;
+    width: 40%;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    font-size: 40px; 
+    margin-bottom: 20px;
+    margin-top: 20px;
+    /* background-color:  goldenrod; */
+    background-color: rgba(218,165,32,0.7);
+    border-radius: 25px;
+}
+
+input[type="submit"]{
+    /* display: block;
+    height: 50px; */
+    width: 80%;
+    margin: auto;
+    left: 10%;
+    right: 10%;
+    border-radius: 25px;
+    border: 4px solid black;
+}
+
+
+/* ovo je forma */
+#div1{
+    display: block;
+    margin:auto;
+    width: 30%;
+    padding: 10px;
+    border-radius: 25px;
+    margin: auto;
+    background-color: rgba(218,165,32,0.7);
+    border:3px solid black;
+
+}
+#slika_logo{
+    margin:auto;
+    width: 50%;
+    height: 70%;
+    padding: 10px;
+    /* border-radius: 25px; */
+}
+#slika_logo img{
+    width: 60%;
+    margin-left: 20%;
+}
+#nemate_nalog{
+    background-color: aliceblue;
+    text-align: center;
+}
+p{
+    margin:auto;
+    width: 30%;
+    padding: 10px;
+}
+
+form{
+    text-align: center;
+    top: 20%;
+    position: relative;
+    /* margin: auto;
+    padding: 10px;
+    background-image: url('taxi_u_praksi_logo.jpeg');
+    background-size:cover ;
+    width: 50%; */
+}

@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"  type="text/css" href="/still.css">
+    <link rel="stylesheet"  type="text/css" href="/signup.css">
     <title>Naziv app</title>
 </head>
 <body id="login">
     
-    <h1 id="naslov">Naziv app</h1>
-
+    <h1 id="naslov">Napravi svoj nalog</h1>
+    <br>
+    
     <div id="div1">
 
         <form method="post" action="../pocetna">
@@ -30,16 +31,18 @@
             <label for="datum_rodjenja">Datum rođenja:</label><br>
 
             <input type="date" class="textBox" name="datum_rodjenja" id="datum_rodjenja" required> 
-            
-
-            <br>
-            <br>
+        
+            <br><br>
             <input type="text" name="ind" value="signup" hidden> 
 
             <input type="submit" value="Prijavi se" id="log">
 
         </form>
-
+    </div>
+        <br>
+        <div id="slika_logo">
+            <img src="taxi_u_praksi_logo.jpeg">
+        </div>
         <script src="validacija.js"></script>
 
 </body>

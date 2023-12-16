@@ -12,8 +12,9 @@ if(form1.length !=  0){
             console.log(potrebno);
             
             if(potrebno > imam){
-                window.alert(`Nemate dovoljno bodova za izabran artikal`);
                 event.preventDefault();
+                window.alert(`Nemate dovoljno bodova za izabran artikal`);
+                
                 return;
             }
         })
