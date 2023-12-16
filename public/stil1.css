@@ -1,19 +1,47 @@
-*{
-    /* color: white; */
+body{
+    background-color: goldenrod;
 }
+
 #kartica{
-    width: 55%;
+    width: 800px;
     height: 600px;
     margin: auto;
     top: 50px;
     background-image: url("kartica.jpg");
     background-size: cover;
     position: relative;
+    border: 2px solid black;
+    border-radius: 25px;
 }
 
 /* style="position: relative; left: 39%;" */
 #qrcode{
     position: absolute;
-    left: 100px;
+    left: 70px;
+    width: 50px;
+}
 
+#logo{
+    position: absolute;
+    width: 120px;
+    bottom: 13px;
+    right: 17px;
+}
+
+.broj{
+    position: absolute;
+    font-size: xx-large;
+    color: gold;
+}
+
+#br{
+    position: absolute;
+    left: 70px;
+    bottom: 100px;
+}
+
+#ime{
+    position: absolute;
+    left: 70px;
+    bottom: 170px;
 }

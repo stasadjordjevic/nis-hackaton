@@ -26,7 +26,7 @@
       <div class="nasa">
         <button id="openNav" class="w3-button w3-white w3-xxlarge"  onclick="w3_open()">&#9776;</button>
         <div class="nasa" id="kartica">
-          <h1 style="text-align: center; color: white;"> Zdravo, <%= user.ime %> </h1>
+          <h1 style="text-align: center; color: gold;"> <%= user.ime %>  <%= user.prezime %></h1>
           <div class="nasa">
             <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
             <div id="qrcode"></div>
@@ -34,6 +34,11 @@
                 new QRCode(document.getElementById("qrcode"), "<%=qr%>" );
             </script>
           </div>
+         
+            <p class="broj" id="ime"> TAXI KARTICA</p> <br><br>
+            <p class="broj" id="br"><%=qr%></p>
+         
+          <img src="nis.png" alt="nis_logo" id="logo">
         </div>
       </div>
       </div>
