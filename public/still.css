@@ -4,6 +4,7 @@
     /* text-align: center; */
 }
 html, body{
+    
     margin: 0;
     height: 100%;
     width: 100%;
@@ -42,14 +43,12 @@ input[type="submit"]{
     
 
 }
-
-
 #login{
     color: goldenrod;
 
 }
 label{
-    margin-left: 10px;
+    /* margin-left: 10px; */
     /* background-color: gray; */
 }
 #naslov{
