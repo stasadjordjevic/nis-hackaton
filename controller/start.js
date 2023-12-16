@@ -15,7 +15,6 @@ module.exports.start = async function(req, res, next){
             await taxiModel.insertTaxiDriver(data.telefon, data.dozvola, data.ime, data.prezime, data.datum_rodjenja);
         }
         if(data.dozvola!= null){
-
             user = await taxiModel.findTaxiDriver(data.dozvola);
         }
 
